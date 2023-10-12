@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    background-color: #202020;
+
+}
+
+.container{
+
+    margin-left: 350px;
+    margin-top: 150px;
+    
+}
+
+.conteudo .texto-titulo{
+    
+    font-size: 50px;
+    color: rgb(3, 168, 163);
+
+}
+
+.texto{
+    
+    margin-top: 50px;
+    width: 70%;
+    padding: 15px;
+    margin-left: 120px;
+    color: white;
+}
+
+nav.menu-lateral{
+
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(3, 168, 163);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+nav.menu-lateral.expandir{
+
+    width: 300px;
+
+}
+
+.btn-expandir{
+
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir > i{
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+ul{
+
+    height: 100%;
+    list-style-type: none;
+
+}
+
+ul li.item-menu{
+
+    transition: .5s;
+}
+
+ul li.ativo{
+
+    background-color: rgb(3, 168, 163);
+}
+
+ul li.item-menu:hover{
+
+    background: rgb(3, 168, 163);
+}
+
+ul li.item-menu a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link{
+
+    margin-left: 65px;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .txt-link{
+
+    margin-left: 45px;
+    opacity: 1;
+
+}
+
+ul li.item-menu a .icon > i{
+
+    font-size: 30px;
+    margin-left: 7px;
+
+}
