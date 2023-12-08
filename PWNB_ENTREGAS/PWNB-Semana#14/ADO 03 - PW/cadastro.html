@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Novo Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="estiloCadastro.css">
+    <script lang="javascript" src="scriptCadasto.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Cadastro de Clientes</h1>
+
+    <form id="formularioCad" class="formulario">
+
+        Nome:<input type="text" id="nome" /><br />
+
+        Sobrenome:<input type="text" id="sobrenome" /><br />
+
+        Data Nascimento:<input type="date" id="nascimento" /><br />
+
+        Cidade:<input type="text" id="cidade" /><br />
+
+        CEP:<input type="text" id="cep" /><br />
+
+        Endereço:<input type="text" id="endereco" /><br>
+        
+        N#:<input type="number" id="n" />
+
+        <select name="Tipo de Cliente" id="plano">
+
+            <option disabled selected> Selecione o Plano </option>
+            <option value="bronze">Bronze</option>
+            <option value="prata">Prata</option>
+            <option value="ouro">Ouro</option>
+            <option value="platina">Platina</option>
+            <option value="diamante">Diamante</option>
+
+        </select>
+
+        <button type="button" onclick="incluir();">Incluir</button>
+        <button type="button" onclick="atualizar();">Atualizar</button>
+        <button type="reset">Limpar</button>
+
+        <br>
+        <br>
+        <br>
+
+    </form>
+
+    <div id="painel">
+        <table id="tabela">
+            <h5>Nome</h5>
+            <h5>Data de Nascimento</h5>
+            <h5>UF</h5>
+            <h5>Endereço</h5>
+            <h5>Ação</h5>
+        </table>
+    </div>
+
+</body>
+
+</html>
